@@ -1,0 +1,25 @@
+
+# dependencies
+/node_modules
+/build
+.cache
+
+# IDE
+/.idea
+/.awcache
+/.vscode
+
+# misc
+npm-debug.log
+.DS_Store
+
+# tests
+/test
+/coverage
+/.nyc_output
+test-schema.graphql
+*.test-definitions.ts
+
+# dist
+/lib/src
+/dist

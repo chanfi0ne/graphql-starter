@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""hello"""
+type Hello {
+  salutation: String!
+}
+
+"""task"""
+type Task {
+  id: ID!
+  title: String!
+  description: String!
+  status: Boolean!
+}
+
+type Quote {
+  message: String!
+}
+
+type Query {
+  greet(subject: String!): Hello!
+  tasks: [Task!]
+  quote: Quote
+}
