@@ -4,11 +4,11 @@ ENV NODE_ENV build
 
 WORKDIR /app
 
-USER node
+USER root
 
 COPY --chown=node:node .  /app
 
-RUN npm ci --only=production
+RUN npm run build
 
 FROM node:16-alpine
 
