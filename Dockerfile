@@ -4,8 +4,6 @@ ENV NODE_ENV build
 
 WORKDIR /app
 
-RUN chown -R node:node /app
-
 USER node
 
 COPY --chown=node:node .  /app
