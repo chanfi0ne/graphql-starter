@@ -21,7 +21,7 @@ describe('HelLoModule (e2e)', () => {
       .send({
         operationName: null,
         variables: {},
-        query: '{getProducts{id, price}}',
+        query: `query{ greet(subject:"some name"){ salutation }}`,
       })
       .expect(200);
   });
